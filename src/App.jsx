@@ -1,6 +1,6 @@
 
 import './App.css'
-import Sidebar from './components/organisms/Sidebar'
+import Sidebar from 'components/organisms/Sidebar'
 
 function App() {
 

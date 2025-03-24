@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SidebarMenu from 'components/molecules/SidebarMenu';
 
 function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -6,7 +7,7 @@ function Sidebar() {
     
     return (
         <>
-            
+            <SidebarMenu />
         </>
     )
 }
