@@ -14,22 +14,22 @@ function SidebarMenu() {
     {
       label: "Freshman",
       icon: <SchoolIcon />,
-      path: "/pages/Freshman",
+      path: "/freshman",
     },
     {
       label: "Sophomore",
       icon: <SchoolIcon />,
-      path: "/pages/Sophomore",
+      path: "/sophomore",
     },
     {
       label: "Junior",
       icon: <SchoolIcon />,
-      path: "/pages/Junior",
+      path: "/junior",
     },
     {
       label: "Senior",
       icon: <SchoolIcon />,
-      path: "/pages/Senior",
+      path: "/senior",
     },
   ];
 
@@ -38,9 +38,7 @@ function SidebarMenu() {
       {links.map((link, index) => (
         <ListItem key={index} disablePadding>
           <ListItemButton component={Link} to={link.path}>
-            <ListItemIcon>
-              <SchoolIcon />
-            </ListItemIcon>
+            <ListItemIcon>{link.icon}</ListItemIcon>
             <ListItemText primary={link.label} />
           </ListItemButton>
         </ListItem>
